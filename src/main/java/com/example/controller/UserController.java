@@ -23,7 +23,9 @@ public class UserController {
     User getUserInfo(HttpServletRequest request){
         int userId = Integer.parseInt(request.getParameter("id"));
         User user = userService.getUserInfo(userId);
+        System.out.println("hahha__________-------------"+user.toString());        System.out.println("hahha__________-------------"+user.toString());
         System.out.println("hahha__________-------------"+user.toString());
+
         return user;
     }
 }
